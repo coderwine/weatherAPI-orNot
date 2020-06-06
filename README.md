@@ -14,7 +14,7 @@ General Notes:
     APIs Utilized:
         1) https://weatherstack.com (free versioning)
 
-    QUICK NOTES:
+    QUICK NOTES
         - gitignore created to protect personal access keys.  In order to allow for these projects to work, a separate JS file was created to pull these keys from within the HTML.  
 
 ****
