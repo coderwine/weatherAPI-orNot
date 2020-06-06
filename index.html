@@ -1,18 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="./styles/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="./styles/materialize.css" media="screen,projection" />
 
     <!-- MY CSS -->
     <link rel="stylesheet" href="./styles/main.css">
     <title>Weather API</title>
 </head>
-<body>
-    <h1>Weather it Works or Not...</h1>
 
+<body>
+    <!-- NAV -->
+    <nav>
+        <div class="nav-wrapper navBar #aed581 light-green lighten-2">
+            <a href="#!" class="brand-logo custIcon"><i class="large material-icons">settings_input_svideo</i></a>
+        </div>
+    </nav>
+
+    <div class="mainDisplay #33691e light-green darken-4">
+        <div class="col s12 m7">
+            <h2 class="header">Weather Display</h2>
+            <div class="card horizontal">
+                <div class="card-image">
+                    <img src="https://lorempixel.com/100/190/nature/6">
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">This is a link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <footer class="page-footer #aed581 light-green lighten-2">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <form>
+                        <div class="input-field">
+                            <input id="search" type="search" required>
+                            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                            <i class="material-icons">close</i>
+                        </div>
+                    </form>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Resources Utilized</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="https://weatherstack.com">Weather Stack</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://ip-api.com/">ip-api</a></li>
+                        <!-- <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2020 Copyright Eric Winebrenner
+                <a class="grey-text text-lighten-4 right" href="https://coderwine.github.io/portfolio/">EJW</a>
+            </div>
+        </div>
+    </footer>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
     <!-- MY JS -->
     <script src="./keys.js"></script> <!-- speciality JS file that injects personal API Access Keys -->
     <script src="./scripts/weatherStack.js"></script>
 </body>
+
 </html>

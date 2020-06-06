@@ -1,0 +1,13 @@
+.custIcon {
+    transform: rotate(180deg);
+}
+
+.mainDisplay {
+    padding: .5em;
+}
+
+.page-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+};
