@@ -7,6 +7,10 @@ const histURL = `https//api.weatherstack.com/historical?access_key=${weatherStac
 let currentLocation = 'Indianapolis'
 let degree = '&units=f'  //calls on unit of measurement
 
+// Locate Elements
+let cardLocation = document.querySelector(".locationDisplay");
+
+
 function fetchWeatherStack(ip) {
     
     let buildURL = `${baseURL}${currentLocation}${degree}`;
@@ -43,6 +47,7 @@ function setItems(weather, ip) {
 
     let theWeather = weather;
 
+    // Weather
     console.log('Current: ', theWeather.current)
     console.log('Temp: ', theWeather.current.temperature)
     console.log('Humidity: ', theWeather.current.humidity)
@@ -57,10 +62,19 @@ function setItems(weather, ip) {
     console.log('City: ', theWeather.location.name) //City
     console.log('State: ', theWeather.location.region) //State
 
-    console.log('IP FIND: ', data);
-    console.log('IP query: ', data.query);
-    console.log('IP Provider: ', data.org);
-    console.log('IP City: ', data.city);
-    console.log('IP State: ', data.region);
-    console.log('IP ISP: ', data.isp);
+    // Display
+    //Keeps the icon for card when City/St are injected
+    let showIcon = document.createElement('i');
+    showIcon.className = "material-icons right";
+    showIcon.innerText = 'more_vert';
+
+    cardLocation.innerText = `${theWeather.location.name}, ${theWeather.location.region}` 
+    cardLocation.appendChild(showIcon);
+
+    console.log('IP FIND: ', ip);
+    console.log('IP query: ', ip.query);
+    console.log('IP Provider: ', ip.org);
+    console.log('IP City: ', ip.city);
+    console.log('IP State: ', ip.region);
+    console.log('IP ISP: ', ip.isp);
 }

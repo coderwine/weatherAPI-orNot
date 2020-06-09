@@ -41,4 +41,5 @@ Status Notes:
     - Did a quick layout utilizing martializecss.com.
         - Focus on Mobile First.
         - May utilize a different card to display different information (such as a tabbed card)
-
+6/8
+    - Start injecting information from API pull into the card (currently just the city and state).

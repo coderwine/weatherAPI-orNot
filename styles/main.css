@@ -6,6 +6,11 @@
     padding: .5em;
 }
 
+.cardImage{
+    height: 40vh;
+    width: 100vw;
+}
+
 .page-footer {
     position: fixed;
     bottom: 0;
