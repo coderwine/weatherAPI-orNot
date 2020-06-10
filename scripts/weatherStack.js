@@ -71,6 +71,27 @@ function setItems(weather, ip) {
     cardLocation.innerText = `${theWeather.location.name}, ${theWeather.location.region}` 
     cardLocation.appendChild(showIcon);
 
+    //Inside Card
+    let weatherIcon = document.querySelector('.weatherIcon');
+    let tempDisp = document.querySelector('.tempDisp');
+    let humidDisp = document.querySelector('.humidDisp');
+    let precipDisp = document.querySelector('.precipDisp');
+    let uvDisp = document.querySelector('.uvDisp');
+    let windSpeedDisp = document.querySelector('.windSpeedDisp');
+    let windDirDisp = document.querySelector('.windDirDisp');
+    let descDisp = document.querySelector('.descDisp');
+
+    weatherIcon.src = theWeather.current.weather_icons;
+    tempDisp.innerText = `Temperature: ${theWeather.current.temperature}`;
+    humidDisp.innerText = `Humidity: ${theWeather.current.humidity}`;
+    precipDisp.innerText = `Precipitation: ${theWeather.current.precip}`;
+    uvDisp.innerText = `UV Index: ${theWeather.current.uv_index}`;
+    windSpeedDisp.innerText = `Wind Speed: ${theWeather.current.wind_speed}`;
+    windDirDisp.innerText = `Wind Direction: ${theWeather.current.wind_dir}`;
+    descDisp.innerText = `Description: ${theWeather.current.weather_descriptions}`;
+
+
+    //!------------------------------------
     console.log('IP FIND: ', ip);
     console.log('IP query: ', ip.query);
     console.log('IP Provider: ', ip.org);
