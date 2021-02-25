@@ -43,3 +43,6 @@ Status Notes:
         - May utilize a different card to display different information (such as a tabbed card)
 6/8
     - Start injecting information from API pull into the card (currently just the city and state).
+
+6/9
+    - Linked remaining desired information from the Weatherstack API into the card.  Still need styling.
